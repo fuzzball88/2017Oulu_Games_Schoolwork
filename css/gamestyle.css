@@ -1,0 +1,149 @@
+#wholePage{
+    position: relative;
+}
+
+.gameButton{
+    width: 2em;
+    height: auto;
+    z-index: 111;
+}
+
+
+#Sgame1{
+    position: absolute;
+    display: none;
+    top: 30%;
+    left:60%;
+    right: 40%;
+    bottom:70%;
+}
+#Sgame11{
+    position: absolute;
+    display: none;
+    top: 30%;
+    left:60%;
+    right: 40%;
+    bottom:70%;
+}
+#Sgame2{
+    position: absolute;
+    display: none;
+    top: 60%;
+    left:20%;
+    right: 80%;
+    bottom:40%;
+}
+#Sgame22{
+    position: absolute;
+    display: none;
+    top: 60%;
+    left:20%;
+    right: 80%;
+    bottom:40%;
+}
+#Sgame3{
+    position: absolute;
+    display:none;
+    top: 80%;
+    left:80%;
+    right:20%;
+    bottom:20%;
+}
+#Sgame33{
+    display:none;
+    position: absolute;
+    top: 80%;
+    left:80%;
+    right:20%;
+    bottom:20%;
+}
+#gameFound{
+    position: fixed;
+    margin: 0 auto;
+    border: 5px solid #244b5a;
+    height: auto;
+    width: 40%;
+    left: 0em;
+    right: 0em;
+    top: 40%;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #397c8f;
+    display:none;
+    border-radius: 10%;
+    min-width: 16em;
+    min-height: 6em;
+    z-index: 111;
+    
+}
+    
+    
+#gameFound:hover{
+    background-color: #8fb8cc;
+}
+#gameCloseBtn{
+    display: none;
+    position:absolute;
+    margin: 0 auto;
+    left: 0%;
+    right: 0%;
+}
+.foundText{
+    
+}
+
+#winBoxButton{
+    border: 3px solid black;
+    width: 4em;
+    height: 1em;
+    display: inline-block;
+    
+}
+#winBoxButton:hover{
+    background-color: green;
+}
+.tightText{
+    margin-top: 1%;
+}
+
+
+
+.flip3D{
+/*    width: 240px;
+    height: 200px;
+    margin: 20px;
+    float: left;*/
+}
+
+.flip3D > .etu {
+    position: absolute;
+    -webkit-transform: perspective( 600px ) rotateY( 0deg);
+/*    background: e;*/
+    /*width: 240px;*/
+    /*height: 200px;*/
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transition: transform 0.8s linear 0s;
+}
+
+.flip3D > .taka{
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    /*background: #80BFFF;*/
+    /*width: 240px;*/
+    /*height: 200px;*/
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform 0.8s linear 0s;
+}
+
+.flip3D:hover > .etu {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:hover > .taka {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+}

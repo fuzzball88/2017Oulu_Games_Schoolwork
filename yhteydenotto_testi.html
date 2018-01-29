@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Webprojekti</title>
+        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+
+
+<!--EMAIL FORMIJUTTUA-->
+<div id="mailformContainer">    
+<h2>Send e-mail to someone@example.com:</h2>
+
+<form action="mailto:someone@example.com" method="post" enctype="text/plain" action="SaveContactForm.php">
+Name:<br>
+<div class="shortInput">
+    <input type="text" id="namei" placeholder="Your name" name="name" maxlenght="50"><br>
+</div>
+<div class="shortInput">
+Company name:<br>
+<input type="text" id="companyi" placeholder="Company name" name="companyName" maxlenght="50"><br>
+</div>
+<div class="shortInput">
+    E-mail:<br>
+<input type="text" id="emaili" placeholder="Your email" name="yourEmail" maxlenght="100"><br>
+</div>
+<div class="shortInput">
+    Game name:<br>
+<input type="text" id="gamei" placeholder="Your game" name="gameName" maxlenght="100"><br>
+</div>
+<div class=longInput>
+    Game descrpition:<br>
+    <textarea id="commenti" placeholder="Descripe your game in a few sentences" name="Description" maxlenght="2000"></textarea><br><br>
+</div>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+</div>
+
+
+<script src="webprojekti.js"> </script>
+    </body>
+</html>

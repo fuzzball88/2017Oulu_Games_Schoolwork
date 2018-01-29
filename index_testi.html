@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Webprojekti</title>
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/gamestyle.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body onload="startGame()">
+        <div id="wholePage">
+            <!--Site Game STUFF HERE-->
+            
+            <div class="gamecontainer">
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame1" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame11" class="gameButton etu"/>
+                </div>
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame3" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame33" class="gameButton etu"/>
+                            </div>
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame2" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame22" class="gameButton etu"/>
+                </div>
+                
+        <div id="gameFound" onclick="closeGameBox()"> 
+            <div id="snow">
+            <h2>Löysit salaisen pelin!</h2>
+            <h3>1/6 hiutaleesta löydetty.</h3>
+            <p><br/>
+            Kun löydät kaikki kuusi hiutaletta voitat palkinnon.<br/>
+            Sulje tämä laatikko painamalla tätä.</p>
+            </div>
+        </div>
+
+<div id="omniContainer">        
+        <!--BACKGROUND VIDEO STUFF HERE-->
+
+<div id="videoContainerEtu"> 
+    <div id="imageloopdiv"> </div>
+    <!--        NAVIGATION STUFF-->
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">ETUSIVU</a>
+        <a href="pelit.html">PELIT</a>
+        <a href="yhteydenotto.html">YHTEYDENOTTO</a>
+        <a href="partnerit.html">PARTNERIT</a>
+        <a href="testpage.html">testpage</a>
+        <a href="javascript:void(0);" class="icon" onclick="Function()">&#9776;</a>
+    </div>
+    <div>
+        
+    </div>
+    
+    <a href="pelit.html#pitch1" class="circle-container" id="circle1">
+        <div id="circle-text1">
+            <!--<p>CHECK OUT THE GAMES SO FAR</p>-->
+        </div>
+    </a>
+    <a href ="partnerit.html" class="circle-container" id="circle2">
+        <div id="circle-text2">
+            <!--<p>SOMETHING ELSE</p>-->
+        </div>
+    </a>
+    <a href="etusivu.html" class="circle-container" id="circle3">
+        <div id="circle-text3">
+            <!--<p>MORE TUFF?</p>-->
+        </div>
+    </a>
+
+    <video id="video" autoplay="autoplay" loop="loop">
+        <source src="videos/mb720ps.mp4" type="video/mp4">
+    </video> 
+</div>
+        
+        <div id="oulugamesInfo">
+            <div id="borderLeft"></div>
+                <div id="borderRight"></div>
+                <h1 id="oulugamesH"> OULU GAMES </h1>
+                <p id="oulugamesInfoP">
+                    Oulu Games on kahden päivän indie-pelien pitsaus tapahtuma. <br> 
+                    Tapahtuman tarkoituksena on luoda verkostoitumis mahdollisuuksia pelien 
+                    kehittäjille sekä tarjota harrastelijoille mahdollisuus tutustua kehittäjiin 
+                    ja heidän peleihinsä. <br><br>Niin harrastelijat kuin ammattilaiset voivat ilmoittaa 
+                    pelinsä näytille ja pitsata pelit itse tapahtumassa.<br><br> 
+                    Tapahtumapaikkana toimii Oulun Uusi Seurahuone (Rantakatu 4).
+                </p>
+        </div>
+
+        <!--Dummy div for responsive script replace later-->
+<div id="dummy"></div>
+
+</div>
+</div>
+<script src="js/Script.js"></script>
+<script src="js/webprojekti.js"> </script>
+<script src="js/game.js"> </script>
+
+</body>
+</html>

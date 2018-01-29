@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Järjestäjät - Oulu Games</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+        
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/gamestyle.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style type="text/css">
+            
+            body{
+                background-color:#193543;
+            }
+            h1,h2,h3,p{
+                color:white;
+            }
+            #otsikko{
+                padding-top:2%;
+                padding-bottom:2%;
+            }
+            .row{
+                padding-top:2%;
+                padding-bottom:2%;
+            }
+            .infotext{
+                background-color:#244b5a;
+                border:1px solid #397c8f;
+                margin:1em auto;
+            }
+            .infopic{
+                margin:1em auto;
+            }
+            
+        </style>
+    </head>
+    
+    <body onload="startGame()">
+        
+    
+            <!--Site Game STUFF HERE-->
+            <!--Site Game STUFF HERE-->
+            
+            <div class="gamecontainer">
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame1" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame11" class="gameButton etu"/>
+                </div>
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame3" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame33" class="gameButton etu"/>
+                            </div>
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame2" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame22" class="gameButton etu"/>
+                </div>
+    
+    
+        <div id="gameFound" onclick="closeGameBox()"> 
+                
+            <h2>Löysit salaisen pelin!</h2>
+            <h3>6/6 hiutaleesta löydetty.</h3>
+            <p><br/>
+                Onneksi olkoon olet löytänyt kaikki piilotetut hiutaleet<br/>
+                Paina alla olevaa KLIKKAA-nappia ja lähetä meille nimesi, niin voit noutaa palkintosi tapahtumassa.<br/>
+                <a href="mailto:oulugames@gmail.com?Subject=Oulu Games 2017" class="contactButton"> KLIKKAA </a><br/>
+                Sulje tämä laatikko painamalla tätä.</p>
+               
+        </div>
+            
+       <!--BACKGROUND VIDEO STUFF HERE-->
+    <div id="logoOG">
+        <img src="img/icon/Logo.png" alt="logoOG">
+    </div>
+
+<div id="videoContainer"> 
+    <div id="imageloopdiv"> </div>
+
+    <video id="video" autoplay="autoplay" loop="loop">
+        <source src="videos/mb720ps.mp4" type="video/mp4">
+    </video> 
+</div>
+        
+        <!--        NAVIGATION STUFF-->
+    <div id="navBackground">
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">ETUSIVU</a>
+        <a href="tapahtuma.html">TAPAHTUMA</a>
+        <a href="yhteydenotto.html">YHTEYDENOTTO</a>
+        <a href="partnerit.html">TUOMARIT</a>
+        <a href="pelit.html">PELIT</a>
+        <a href="jarjestajat.html">JÄRJESTÄJÄT</a>
+        <a href="javascript:void(0);" class="icon" onclick="Function()">&#9776;</a>
+    </div>
+
+<!--PARTNERS ETC HERE-->
+    <div class="container">
+    
+            <h1 id="otsikko">Tapahtuman järjestäjät</h1>
+            
+            <div class="row" >
+             
+                <div class="col-lg-4 infopic" >
+                    <img class="img-responsive img-circle" src="img\people\teroFrostyMilkshake.svg" alt="hiihtäjä"/>
+                </div>
+                
+                <div class="col-lg-8 infotext">
+                    <div class="row" >
+                        <div class="col-lg-12">
+                            <h2>Tero Pelkonen</h2>
+                            <h3>Multimiljonääri sekä paikallinen pelivaikuttaja</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Tero on luonut omaisuutensa innovatiivisilla AR-mobiilipeleillä. 
+                            Oulun seudun rikkaimpiin kuuluvana hänellä on varmasti varaa tukea taloudellisesti 
+                            mielenkiintoisia peliyrityksiä. Häntä kiinnostaa erityisesti nähdä Oulun alueen 
+                            seuraavan sukupolven indie-pelituottajien ideoita sykkivät tuotokset sekä ottaa 
+                            osaa niihin. Ei ole yhtäkään tulevaa projektia tämän tapahtuman voittajalla, 
+                            johon hän jättäisi osallistumasta. Hän lupaa myös, että voittaja on kutsuttu hänen 
+                            Kuusamon huvilaansa suorittamaan pelinkehitystä ja nauttimaan Lapin luonnosta. 
+                            <br/>
+                            <br/>
+                            <p>Peleissä hän arvostaa mukaansa imaisevaa kokonaisuutta, järkevää suunnittelua sekä hyvää rytmitystä.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" >
+             
+                <div class="col-lg-4 infopic" >
+                    <img class="img-responsive img-circle" src="img\people\TuomasV.jpg" alt="Vallo"/>
+                </div>
+                
+                <div class="col-lg-8 infotext">
+                    <div class="row" >
+                        <div class="col-lg-12">
+                            <h2>Tuomas Vallo</h2>
+                            <h3>Pelisuunnittelija sekä toimitusjohtaja yrityksessä Easy Gaming</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Tuomas perusti vuonna 2012 Easy Gaming -yrityksen, joka nopeasti kasvoi yhdeksi
+                            nykypäivän suurimmista pelistudioista. Tuomaksen intohimo peleihin syttyi jo 
+                            hänen ollessa lapsi ja värkätessä erilaisten konsolipelien parissa.
+                            Nyt suuren menestyksensä ansiosta hän haluaa olla mukana tukemassa kotimaista 
+                            pelialaa ja auttamassa uusia pelinkehittäjiä taloudellisesti sekä opastamalla 
+                            heitä uravalinnoissaan. Parhaiden projektien jäsenet voivat odottaa työtarjouksia, 
+                            sillä Tuomas etsii jatkuvasti uusia pelisuunnittelijoita omaan yritykseensä. 
+                            <br/>
+                            <br/>
+                            <p>Peleissä hän arvostaa omaperäisyyttä sekä laadukasta lopputulosta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" >
+             
+                <div class="col-lg-4 infopic" >
+                    <img class="img-responsive img-circle" src="img\people\Toni.jpg" alt="Seuraava"/>
+                </div>
+                
+                <div class="col-lg-8 infotext">
+                    <div class="row" >
+                        <div class="col-lg-12">
+                            <h2>Toni Hyvönen</h2>
+                            <h3>LessThanThree peliyrityksen perustaja</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>LessThanThree on romanttisten visual novel-tyyppisten pelien kärkikehittäjä. Yrityksessä Toni toimii 
+                            pääasiassa pelisuunnittelijana sekä tuottajana, yrityksen johtamisen lisäksi.
+                            LessThanThree etsii kokoajan joukkoihinsa taitavia kirjoittajia ja 2D-artisteja ammattilaisista uusiin kykyihin.
+                            Tonin mukaan Oulu on kehittymässä erinomaiseksi pelialan keskukseksi Suomessa, mikä inspiroikin häntä
+                             lähtemään Oulu Games-projektiin mukaan yhtenä pääjärjestäjistä.
+                            <br/>
+                            <br/>
+                            <p>Peleissä hän arvostaa muodokasta ja liikkuvaa taidetta, sekä responsiivista pelattavuutta
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" >
+             
+                <div class="col-lg-4 infopic" >
+                    <img class="img-responsive img-circle" src="img\people\VilleA.jpg" alt="Alapuranen"/>
+                </div>
+                
+                <div class="col-lg-8 infotext">
+                    <div class="row" >
+                        <div class="col-lg-12">
+                            <h2>Ville Alapuranen</h2>
+                            <h3>Olutasiantuntija, Panimomestari, Junior Vice President of Los Saints eSports</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Ville on luonut massiivisen maineensa sekä oman eSport-organisaationsa kovalla 
+                            työllä ja 15 vuoden kokemuksella kilpailuhenkisissä verkkopeleissä. 
+                            Vaikka hän todennäköisesti onkin yksi Suomen kuumimmista nimistä alalla, 
+                            hän ei suostu paljastamaan yhdenkään fanin nimeä heidän yksityisyytensä 
+                            suojaamiseksi, mutta vakuuttaa, että vannoutuneita faneja on pelkästään Oulussa 
+                            yli 300 000. Tapahtumaan osallistuville pelituottajille hän aikoo antaa tärkeitä 
+                            neuvoja sekä hienosäätää mahdolliset moninpeliominaisuudet kuntoon heidän kanssaan. 
+                            <br/>
+                            <br/>
+                            <p>Tapahtuman voittajalle on luvassa nimmareita sekä omassa kellaripanimossa 
+                            valmistettua juhlaolutta.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    
+    <footer>
+        <ul class="footerSM">
+            <li><a href="index.html"><img class="logoi" src="img/logo/homepageicon.png" alt="H"></a></li>
+            <li><a target="_blank" href="#"><img class="logoi" src="img/logo/facebook.png" alt="F"></a></li>
+            <li><a target="_blank" href="https://twitter.com/oulugames"><img class="logoi" src="img/logo/twitter.png" alt="T"></a></li>
+        </ul>
+        <p>
+            +35840123456<br>
+            oulugames@gmail.com
+        </p>
+    </footer>
+
+            
+<script src="js/bootstrap/jquery-1.11.2.min.js"> </script>
+<script src="js/bootstrap/bootstrap.min.js"> </script>
+<script src="js/webprojekti.js"> </script>
+<script src="js/game.js"></script>
+</body>
+</html>

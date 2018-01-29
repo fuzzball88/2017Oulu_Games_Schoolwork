@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ilmoittautuneet pelit - Oulu Games</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/gamestyle.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tutustu ilmoitettuihin peleihin jo ennen tapahtumaa!">
+    </head>
+    
+    <body onload="startGame()">
+        <div id="wholePage">
+        <!--Site Game STUFF HERE-->
+            
+            <div class="gamecontainer">
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame1" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame11" class="gameButton etu"/>
+                </div>
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame3" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame33" class="gameButton etu"/>
+                            </div>
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame2" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame22" class="gameButton etu"/>
+                </div>
+    
+    
+        <div id="gameFound" onclick="closeGameBox()"> 
+            <h3>5/6 hiutaleesta löydetty.</h3>
+            <p><br/>
+                Löydä vielä yksi hiutale niin voitat.<br/>
+                Sulje tämä laatikko painamalla tätä.</p>
+               
+        </div>
+        
+       <!--BACKGROUND VIDEO STUFF HERE-->
+    <div id="logoOG">
+        <img src="img/icon/Logo.png" alt="logoOG">
+    </div>
+
+<div id="videoContainer"> 
+    <div id="imageloopdiv"> </div>
+
+    <video id="video" autoplay="autoplay" loop="loop">
+        <source src="videos/mb720ps.mp4" type="video/mp4">
+    </video> 
+</div>
+        
+        <!--        NAVIGATION STUFF-->
+    <div id="navBackground">
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">ETUSIVU</a>
+        <a href="tapahtuma.html">TAPAHTUMA</a>
+        <a href="yhteydenotto.html">YHTEYDENOTTO</a>
+        <a href="partnerit.html">TUOMARIT</a>
+        <a href="pelit.html">PELIT</a>
+        <a href="jarjestajat.html">JÄRJESTÄJÄT</a>
+        <a href="javascript:void(0);" class="icon" onclick="Function()">&#9776;</a>
+    </div>
+</div>
+
+
+ <!--Pitch box stuff-->
+<div id="pcContainer">   
+    <div class="pitchMobile pitchMobilel">
+        
+        <div class="pitchLinkMob">
+          <a href="#game1">Katso lisää</a>
+        </div>
+
+        <div class="pitchParaMob">
+          <p>Hullunkurinen pelastusretki saa alkunsa, kun sadistiset kissat ovat vanginneet Hatty Hattingtonin 
+          ystäväkaartin kummalliselle saarelle.</p>
+        </div>
+        
+        <div class="pitchContainer pitchl" id="pitch1"> 
+        
+            <div class="pitchCover">
+
+                <div class="pitchLink">
+                  <a href="#game1">Katso lisää</a>
+                </div>
+
+                <div class="pitchTitle">
+                  <a href="#game1">Battleblock: Theater</a>
+                </div>
+
+                <div class="pitchPara">
+                  <p>Hullunkurinen pelastusretki saa alkunsa, kun sadistiset kissat ovat vanginneet Hatty Hattingtonin 
+          ystäväkaartin kummalliselle saarelle.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="pitchMobile pitchMobiler">
+        
+        <div class="pitchLinkMob">
+          <a href="#game2">Katso lisää</a>
+        </div>
+
+        <div class="pitchParaMob">
+          <p>Epävarmana siskonsa kohtalosta, poika astuu sisään Limboon</p>
+        </div>
+
+        <div class="pitchContainer pitchr" id="pitch2"> 
+            <div class="pitchCover">
+
+                <div class="pitchLink">
+                  <a href="#game2">Katso lisää</a>
+                </div>
+
+                <div class="pitchTitle">
+                  <a href="#game2">Limbo</a>
+                </div>
+
+                <div class="pitchPara">
+                  <p>Epävarmana siskonsa kohtalosta, poika astuu sisään Limboon</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pitchMobile pitchMobilel">
+        
+        <div class="pitchLinkMob">
+          <a href="#game3">Katso lisää</a>
+        </div>
+
+        <div class="pitchParaMob">
+          <p>Overcooked on yhdestä neljään pelaajaa työllistävä nopeatempoinen peli, 
+          jossa on tarkoituksena pyörittää ravintolaa. </p>
+        </div>
+
+        <div class="pitchContainer pitchl" id="pitch3"> 
+          
+            <div class="pitchCover">
+
+                <div class="pitchLink">
+                  <a href="#game3">Katso lisää</a>
+                </div>
+
+                <div class="pitchTitle">
+                  <a href="#game3">Overcooked</a>
+                </div>
+
+                <div class="pitchPara">
+                  <p>Overcooked on yhdestä neljään pelaajaa työllistävä nopeatempoinen peli, 
+                  jossa on tarkoituksena pyörittää ravintolaa. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pitchMobile pitchMobiler">
+
+        <div class="pitchLinkMob">
+          <a href="#game4">Katso lisää</a>
+        </div>
+
+        <div class="pitchParaMob">
+          <p>Super Meat Boy on vauhdikas kasibittinen tasohyppelypeli, 
+          jossa pelaajan täytyy selvittää tiensä lasersäteiden täyttämien käytävien ja 
+          singahtelevien sirkkelinterien läpi. </p>
+        </div>
+
+        <div class="pitchContainer pitchr" id="pitch4"> 
+            <div class="pitchCover">
+
+                <div class="pitchLink">
+                  <a href="#game4">Katso lisää</a>
+                </div>
+
+                <div class="pitchTitle">
+                  <a href="#game4">Super Meat Boy</a>
+                </div>
+
+                <div class="pitchPara">
+                  <p>Super Meat Boy on vauhdikas kasibittinen tasohyppelypeli, 
+                  jossa pelaajan täytyy selvittää tiensä lasersäteiden täyttämien käytävien ja 
+                  singahtelevien sirkkelinterien läpi. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<!--Slideshow stuff-->
+<a href="#pitch1"><div class="goUp"><i class="up arrow"></i></div></a>
+<div class="sscContainer" id="game1Container">
+    <div class="slideshowContainer" id="game1">
+        <div class="bigSlideContainer"> 
+            <a class="prev" onclick="plusDivs1(-1)">&#10094;</a>
+            <a class="next" onclick="plusDivs1(+1)">&#10095;</a>           
+            <div class="bigSlide1" id="g1bigSlide1"> </div>
+            <div class="bigSlide1" id="g1bigSlide2"> </div>
+            <div class="bigSlide1" id="g1bigSlide3"> </div>
+            <div class="bigSlide1" id="g1bigSlide4"> </div>
+        </div>
+        <div class="smallSlideContainer">
+            <div class="smallSlide1" id="g1smallSlide1" onclick="currentSlide1(1)"> </div>
+            <div class="smallSlide1" id="g1smallSlide2" onclick="currentSlide1(2)"> </div>
+            <div class="smallSlide1" id="g1smallSlide3" onclick="currentSlide1(3)"> </div>
+            <div class="smallSlide1" id="g1smallSlide4" onclick="currentSlide1(4)"> </div>
+        </div>
+    </div>
+    <input type="checkbox" id="infoOpener1" class="infoOpener"/>
+    <label for="infoOpener1" class="infoOpenerLabel">&#9776;</label>
+    <div id="ssInfo1" class="ssInfo">
+        <div class="gameInfo">
+            <h1 class="gameTitle">
+                Battleblock Theater
+            </h1>
+            <h3 class="gameSlogan">
+                Hullunkurinen pelastusretki saa alkunsa, 
+                kun sadistiset kissat ovat vanginneet Hatty Hattingtonin ystäväkaartin kummalliselle saarelle. 
+            </h3>
+            <p class="gameInfop">
+                Kampanjasta ja moninpelistä koostuva kokonaisuus sisältää paljon erilaisia pelimuotoja, 
+                jotka kuitenkin rakentuvat saman tasohyppelyn, mäiskimisen ja ongelmanratkonnan kolmiyhteyden ympärille. 
+                Herra Hatty Hattingtonin ystäväkaarti on iloisella seikkailupurjehduksellaan ajautunut oudolle saarelle
+                kissaeläinten vangiksi ja huviksi. 
+            </p>
+        </div>
+        <ul class="infoul">
+            <li><a target="_blank" href="http://www.battleblocktheater.com/"><img class="logoi" src="img/logo/homepageicon.png"></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/thebehemoth"><img class="logoi" src="img/logo/facebook.png"></a></li>
+            <li><a target="_blank" href="https://twitter.com/thebehemoth"><img class="logoi" src="img/logo/twitter.png"></a></li>
+            <li><a target="_blank" href="http://store.steampowered.com/app/238460/BattleBlock_Theater/"><img class="logoi" src="img/logo/steamicon.ico"></a></li>
+        </ul>
+    </div>      
+</div>
+    
+<a href="#pitch2"><div class="goUp"><i class="up arrow"></i></div></a>
+<div class="sscContainer" id="game2Container">
+    <div class="slideshowContainer" id="game2">
+        <div class="bigSlideContainer"> 
+            <a class="prev" onclick="plusDivs2(-1)">&#10094;</a>
+            <a class="next" onclick="plusDivs2(+1)">&#10095;</a>           
+            <div class="bigSlide2" id="g2bigSlide1"> </div>
+            <div class="bigSlide2" id="g2bigSlide2"> </div>
+            <div class="bigSlide2" id="g2bigSlide3"> </div>
+            <div class="bigSlide2" id="g2bigSlide4"> </div>
+        </div>
+        <div class="smallSlideContainer">
+            <div class="smallSlide2" id="g2smallSlide1" onclick="currentSlide2(1)"> </div>
+            <div class="smallSlide2" id="g2smallSlide2" onclick="currentSlide2(2)"> </div>
+            <div class="smallSlide2" id="g2smallSlide3" onclick="currentSlide2(3)"> </div>
+            <div class="smallSlide2" id="g2smallSlide4" onclick="currentSlide2(4)"> </div>
+        </div>
+    </div>
+    <input type="checkbox" id="infoOpener2" class="infoOpener"/>
+    <label for="infoOpener2" class="infoOpenerLabel">&#9776;</label>
+    <div id="ssInfo2" class="ssInfo">
+        <div class="gameInfo">
+            <h1 class="gameTitle">
+                Limbo
+            </h1>
+            <h3 class="gameSlogan">
+                Epävarmana siskonsa kohtalosta, poika astuu sisään LIMBOON
+            </h3>
+            <p class="gameInfop">
+                LIMBO on mustavalkoinen ongelmanratkaisu/seikkailupeli, 
+                jossa pelaaja astuu nuoren pojan rooliin. 
+                Epävarmana sisarensa kohtalosta poika matkustaa aavemaiseen ja salakavalaan LIMBO:n maailmaan.
+            </p>
+        </div>
+        <ul class="infoul">
+            <li><a target="_blank" href="http://www.playdead.com/"><img class="logoi" src="img/logo/homepageicon.png"></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/LIMBO-Game-226851264129981/"><img class="logoi" src="img/logo/facebook.png"></a></li>
+            <li><a target="_blank" href="https://twitter.com/playdead"><img class="logoi" src="img/logo/twitter.png"></a></li>
+            <li><a target="_blank" href="http://store.steampowered.com/app/48000/LIMBO/"><img class="logoi" src="img/logo/steamicon.ico"></a></li>
+        </ul>
+    </div>
+    
+</div>
+
+<a href="#pitch3"><div class="goUp"><i class="up arrow"></i></div></a>
+<div class="sscContainer" id="game3Container">
+    <div class="slideshowContainer" id="game3">
+        <div class="bigSlideContainer"> 
+            <a class="prev" onclick="plusDivs3(-1)">&#10094;</a>
+            <a class="next" onclick="plusDivs3(+1)">&#10095;</a>           
+            <div class="bigSlide3" id="g3bigSlide1"> </div>
+            <div class="bigSlide3" id="g3bigSlide2"> </div>
+            <div class="bigSlide3" id="g3bigSlide3"> </div>
+            <div class="bigSlide3" id="g3bigSlide4"> </div>
+        </div>
+        <div class="smallSlideContainer">
+            <div class="smallSlide3" id="g3smallSlide1" onclick="currentSlide3(1)"> </div>
+            <div class="smallSlide3" id="g3smallSlide2" onclick="currentSlide3(2)"> </div>
+            <div class="smallSlide3" id="g3smallSlide3" onclick="currentSlide3(3)"> </div>
+            <div class="smallSlide3" id="g3smallSlide4" onclick="currentSlide3(4)"> </div>
+        </div>
+    </div>
+    <input type="checkbox" id="infoOpener3" class="infoOpener"/>
+    <label for="infoOpener3" class="infoOpenerLabel">&#9776;</label>
+    <div id="ssInfo3" class="ssInfo">
+        <div class="gameInfo">
+            <h1 class="gameTitle">
+                Overcooked
+            </h1>
+            <h3 class="gameSlogan">
+                Overcooked on yhdestä neljään pelaajaa työllistävä nopeatempoinen peli, jossa on
+                tarkoituksena pyörittää ravintolaa. 
+            </h3>
+            <p class="gameInfop">
+                Sipulimaa on uhattuna, kun loputtoman nälkäinen peto uhkaa sen olemassaoloa. 
+                Sinun ja kokkitovereidesi on ruokittava petoa, mikä osoittautuu mahdottomaksi tehtäväksi. 
+                Niinpä Sipulikuningas lähettää pelaajat hakemaan oppia vuodesta 1993, 
+                ja kun oppi alkaa mennä perille, siirrytään pikku hiljaa kohti nykyaikaa. 
+                Matka kohti mestarikokkien aatelia tapahtuu erilaisten kokkaushaasteiden kautta. 
+            </p>
+        </div>
+        <ul class="infoul">
+            <li><a target="_blank" href="http://www.ghosttowngames.com/overcooked"><img class="logoi" src="img/logo/homepageicon.png"></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/overcookedgame/"><img class="logoi" src="img/logo/facebook.png"></a></li>
+            <li><a target="_blank" href="https://twitter.com/Overcookedgame"><img class="logoi" src="img/logo/twitter.png"></a></li>
+            <li><a target="_blank" href="http://store.steampowered.com/app/448510/Overcooked/"><img class="logoi" src="img/logo/steamicon.ico"></a></li>
+        </ul>
+    </div>
+        
+</div>
+
+<a href="#pitch4"><div class="goUp"><i class="up arrow"></i></div></a>
+<div class="sscContainer" id="game4Container">
+    <div class="slideshowContainer" id="game4">
+        <div class="bigSlideContainer"> 
+            <a class="prev" onclick="plusDivs4(-1)">&#10094;</a>
+            <a class="next" onclick="plusDivs4(+1)">&#10095;</a>           
+            <div class="bigSlide4" id="g4bigSlide1"> </div>
+            <div class="bigSlide4" id="g4bigSlide2"> </div>
+            <div class="bigSlide4" id="g4bigSlide3"> </div>
+            <div class="bigSlide4" id="g4bigSlide4"> </div>
+        </div>
+        <div class="smallSlideContainer">
+            <div class="smallSlide4" id="g4smallSlide1" onclick="currentSlide4(1)"> </div>
+            <div class="smallSlide4" id="g4smallSlide2" onclick="currentSlide4(2)"> </div>
+            <div class="smallSlide4" id="g4smallSlide3" onclick="currentSlide4(3)"> </div>
+            <div class="smallSlide4" id="g4smallSlide4" onclick="currentSlide4(4)"> </div>
+        </div>
+    </div>
+    <input type="checkbox" id="infoOpener4" class="infoOpener"/>
+    <label for="infoOpener4" class="infoOpenerLabel">&#9776;</label>
+        <div id="ssInfo4" class="ssInfo">
+        <div class="gameInfo">
+            <h1 class="gameTitle">
+                Supermeatboy
+            </h1>
+            <h3 class="gameSlogan">
+                Super Meat Boy on vauhdikas kasibittinen tasohyppelypeli, 
+                jossa pelaajan täytyy selvittää tiensä lasersäteiden täyttämien käytävien 
+                ja singahtelevien sirkkelinterien läpi.
+            </h3>
+            <p class="gameInfop">
+                Super Meat Boy on tasohyppelypeli, jossa lihamassasta kasatun sankarin tavoite on pelastaa 
+                tyttöystävänsä pahalta Tohtori Sikiöltä. Lihasankari hyppii seinältä seinään ja 
+                yli hurisevien sahojen uhraten oman hyvinvointinsa ja elämänsä pelastaakseen neitonsa. 
+            </p>
+        </div>
+        <ul class="infoul">
+            <li><a target="_blank" href="http://supermeatboy.com/"><img class="logoi" src="img/logo/homepageicon.png"></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/SuperMeatBoy/"><img class="logoi" src="img/logo/facebook.png"></a></li>
+            <li><a target="_blank" href="https://twitter.com/supermeatboy"><img class="logoi" src="img/logo/twitter.png"></a></li>
+            <li><a target="_blank" href="http://store.steampowered.com/app/40800/Super_Meat_Boy/"><img class="logoi" src="img/logo/steamicon.ico"></a></li>
+        </ul>
+    </div>       
+</div>
+
+<footer>
+        <ul class="footerSM">
+            <li><a href="index.html"><img class="logoi" src="img/logo/homepageicon.png" alt="H"></a></li>
+            <li><a target="_blank" href="#"><img class="logoi" src="img/logo/facebook.png" alt="F"></a></li>
+            <li><a target="_blank" href="https://twitter.com/oulugames"><img class="logoi" src="img/logo/twitter.png" alt="T"></a></li>
+        </ul>
+        <p>
+            +35840123456<br>
+            oulugames@gmail.com
+        </p>
+    </footer>
+
+
+<!--<script src="Script.js"></script>-->
+<script src="js/game.js"> </script>
+<script src="js/webprojekti.js"> </script>
+    </body>
+</html>
+

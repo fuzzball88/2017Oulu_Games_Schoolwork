@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ilmoittautumisformi - Oulu Games</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+
+
+<!--EMAIL FORMIJUTTUA-->
+    <div id="mailformContainer">    
+
+        <br><form action="mailto:someone@example.com?subject=Pelin ilmoittaminen" method="post" enctype="text/plain" onsubmit="return checkForm(this);">
+
+        <div class="shortInputl">
+            Nimi:<br>
+            <input type="text" id="namei" placeholder="Nimi" name="name" required><br>
+        </div>
+        <div class="shortInputr">
+            Yrityksen nimi:<br>
+            <input type="text" id="companyi" placeholder="Yrityksen nimi" name="companyName"><br>
+        </div>
+           <div class="shortInputl">
+            Sähköposti:<br>
+            <input type="text" id="emaili" placeholder="Sähköposti" name="yourEmail" required><br>
+        </div>
+           <div class="shortInputr">
+            Nettisivu:<br>
+            <input type="text" id="websitei" placeholder="Nettisivu" name="yourWebsite"><br>
+        </div>
+        <div class="shortInputl">
+            Facebook:<br>
+            <input type="text" id="facebooki" placeholder="Facebook" name="yourFacebook"><br>
+        </div>
+        <div class="shortInputr">
+            Twitter:<br>
+            <input type="text" id="twitteri" placeholder="Twitter" name="yourTwitter"><br>
+        </div>
+        <div class="shortInputl">
+            Steam:<br>
+        <input type="text" id="steami" placeholder="Steam" name="yourSteam"><br>
+        </div>
+           <div class="shortInputr">
+            Youtube:<br>
+            <input type="text" id="youtubei" placeholder="Youtube" name="yourYoutube"><br>
+        </div>
+        <div class="mediumInput">
+            Pelin nimi, genre, alusta:<br>
+            <input type="text" id="gamei" placeholder="Nimi, Genre, Alusta" name="gameName, gameGenre, gamePlatform" required><br>
+        </div>
+        <div class=mediumInput id="mediumText">
+            Pelin myyntilause:<br>
+            <textarea id="peliSlogan" placeholder="Anna pelillesi myyntilause" name="Slogan" maxlength="100" required></textarea><br><br>
+        </div>
+        <div class=longInput>
+            Pelin kuvaus:<br>
+            <textarea id="peliKuvaus" placeholder="Kuvaile pelisi muutamalla lauseella" name="Description" maxlength="400" required></textarea><br><br>
+        </div>
+    <br><p><input id="fieldTerms" type="checkbox" required name="terms" >Muistan liittää sähköpostiin 4 kuvaa pelistäni</p><br>
+    <input type="submit" value="Lähetä" onclick="formFunction()">
+    <input type="reset" value="Reset">
+</form>
+</div>
+
+    <footer>
+        <ul class="footerSM">
+            <li><a href="index.html"><img class="logoi" src="img/logo/homepageicon.png" alt="H"></a></li>
+            <li><a target="_blank" href="#"><img class="logoi" src="img/logo/facebook.png" alt="F"></a></li>
+            <li><a target="_blank" href="https://twitter.com/oulugames"><img class="logoi" src="img/logo/twitter.png" alt="T"></a></li>
+        </ul>
+        <p>
+            +35840123456<br>
+            oulugames@gmail.com
+        </p>
+    </footer>
+
+
+<script src="js/webprojekti.js"> </script>
+    </body>
+</html>

@@ -1,0 +1,161 @@
+   
+ <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tapahtumainfo - Oulu Games</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/gamestyle.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="Lue lisää Oulu Games-tapahtuman sisällöstä ja aikatauluista, sekä katso missä tapahtumapaikka sijaitsee tänäkin vuonna">
+    </head>
+    
+    <body onload="startGame()">
+         <!--Site Game STUFF HERE-->
+            
+            <div class="gamecontainer">
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame1" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame11" class="gameButton etu"/>
+                </div>
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame3" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame33" class="gameButton etu"/>
+                            </div>
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame2" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame22" class="gameButton etu"/>
+                </div>
+    
+    
+        <div id="gameFound" onclick="closeGameBox()"> 
+                
+            <h3>2/6 hiutaleesta löydetty.</h3>
+            <p><br/>
+                Olet tarkkasilmäinen kun löysit toisenkin. Miten loppujen laita?<br/>
+                Sulje tämä laatikko painamalla tätä.</p>
+        </div>
+
+<div id="omniContainer">        
+        <!--BACKGROUND VIDEO STUFF HERE-->
+    <div id="logoOG">
+        <img src="img/icon/Logo.png" alt="logoOG">
+    </div>
+
+<div id="videoContainer"> 
+    <div id="imageloopdiv"> </div>
+
+    <video id="video" autoplay="autoplay" loop="loop">
+        <source src="videos/mb720ps.mp4" type="video/mp4">
+    </video> 
+</div>
+        
+        <!--        NAVIGATION STUFF-->
+    <div id="navBackground">
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">ETUSIVU</a>
+        <a href="tapahtuma.html">TAPAHTUMA</a>
+        <a href="yhteydenotto.html">YHTEYDENOTTO</a>
+        <a href="partnerit.html">TUOMARIT</a>
+        <a href="pelit.html">PELIT</a>
+        <a href="jarjestajat.html">JÄRJESTÄJÄT</a>
+        <a href="javascript:void(0);" class="icon" onclick="Function()">&#9776;</a>
+    </div>
+    
+        
+    <div id="tapahtumaContainer">
+        <div id="tapahtumaInfo">
+            <article id="tapahtumaA">
+                <div id="tapahtumaP">
+                    
+                    <h1 class="tapahtumaH1">
+                        Oulu Games
+                    </h1>
+                    <p>
+                        Oulu Games on kahden päivän indie-pelien pitsaustapahtuma.<br><br>
+
+                        Tapahtuman tarkoituksena on luoda verkostoitumismahdollisuuksia pelinkehittäjille sekä tarjota harrastelijoille mahdollisuus tutustua kehittäjiin ja heidän peleihinsä.
+                        <br><br>
+                        Niin harrastelijat kuin ammattilaiset voivat ilmoittaa pelinsä näytille ja pitsata niitä tapahtumassa. 
+                        Tapahtumapaikkana toimii Oulun Uusi Seurahuone (Rantakatu 4).
+                        <br><br>
+
+                        Tapahtuma järjestetään 16-17. joulukuuta ja pääsy on avoin kaikille! 
+                        <br><br>
+                        Varaa paikkasi nyt ja ole osana huikeaa tapahtumaa.
+                        <br><br>
+                        Pysy ajan tasalla seuraamalla meitä <a href="https://twitter.com/OuluGames" target="_blank">Twitterissä!</a>
+                        <br><br>
+                        Tapahtuma potkaistaan käyntiin klo 15:00 järjestäjien alkutervehdyksellä, jossa he esittelevät
+                        itsensä ja kertovat lisää ohjelmasta.<br><br>
+                    </p>
+                    <h2 class="tapahtumaH2">Yhteistyössä</h2>
+                    <p>
+                        Teemme yhteistyötä paikallisten peli- ja tietotekniikka-alan yritysten kanssa. Mukana ovat mm. Sormisoft, Oulu Pelilabra sekä Koodi Aavikko.
+                        <br><br>
+                    </p>
+                    <h2 class="tapahtumaH2">Kilpailu ja palkinnot</h2>
+                    <p>
+                        
+                        Tuomaroimassa ja puhumassa kolme pelialan ammattilaista:
+                        <br><br>Ion Hazzikostas,
+                        <br>Gabe Newell 
+                        <br>sekä Kati Levoranta.<br><br>
+                        Tuomarit pisteyttävät jokaisen esityksen ja antavat palautetta
+                        osallistujille. <br><br>
+                        1. Sija<br>
+                        10 000€ sekä tiimille matka Leville täysvarustettuun mökkiin koko viikonlopuksi!<br><br>
+                        2. Sija<br>
+                        5 000€ sekä illallisen koko tiimille Ravintola Istanbul
+                        Orientalissa.<br><br>
+                        3. Sija<br>
+                        1 000€ sekä leffa- ja herkkuliput Finnkinoon.<br><br>
+                        Luvassa myös yleisöäänestys, jossa kovimmat aplodit kerännyt ryhmä voittaa tapaamisen
+                        tuomareiden kanssa. Tämä on arvokas mahdollisuus saada opastusta ja neuvoja
+                        projektin kehittämiseen sekä uravalinnoissa.
+                    </p>
+                </div>
+                
+                <div class="tapahtumaImg"><img src="img/event/lavaylhaalta.jpg" alt="OuluGames Lava"></div>
+                <div class="tapahtumaImg"><img src="img/event/lavatakaaeiWille.jpg" alt="OuluGames Lava2"></div>
+                <div class="tapahtumaImg"><img src="img/event/tyhjalava.jpg" alt="OuluGames Tyhjä Lava"></div>
+                <div class="tapahtumaImg"><img src="img/event/lavamustavalko.jpg" alt="OuluGames Lava3"></div>
+            </article>
+        </div>
+    </div>
+        
+        <div id="gmaps">
+        </div>
+        
+<footer>
+        <ul class="footerSM">
+            <li><a href="index.html"><img class="logoi" src="img/logo/homepageicon.png" alt="H"></a></li>
+            <li><a target="_blank" href="#"><img class="logoi" src="img/logo/facebook.png" alt="F"></a></li>
+            <li><a target="_blank" href="https://twitter.com/oulugames"><img class="logoi" src="img/logo/twitter.png" alt="T"></a></li>
+        </ul>
+        <p>
+            +35840123456<br>
+            oulugames@gmail.com
+        </p>
+    </footer>
+
+
+</div>
+<!--<script src="js/Script.js"></script>-->
+<script src="js/game.js"> </script>
+<script src="js/webprojekti.js"> </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2S4mFMhJiR0lZ-QOYokkvivRPlxLnRv4&callback=initMap"></script>
+
+    </body>
+</html>

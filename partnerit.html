@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tuomarit - Oulu Games</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/gamestyle.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body onload="startGame()">
+        <div id="wholePage">
+            <!--Site Game STUFF HERE-->
+            
+            <div class="gamecontainer">
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame1" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame11" class="gameButton etu"/>
+                </div>
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame3" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame33" class="gameButton etu"/>
+                            </div>
+                <div class="flip3D">
+                            <img src="img/game/flakeforgamefound.png" id="Sgame2" class="gameButton taka" onclick="gameIsFound()"/>
+        <!--                    <div id="game1" class="gameButton"  onclick="gameIsFound()">Peli</div>-->
+                            <img src="img/game/flakeforgame.png" id="Sgame22" class="gameButton etu"/>
+                </div>
+                
+            <div id="gameFound" onclick="closeGameBox()">
+        <h3>4/6 hiutaleesta löydetty.</h3>
+        <p><br/>
+            Löydä vielä kaksi niin voitat palkinnon.
+            Sulje tämä laatikko painamalla tätä.</p>
+        </div>
+        
+        
+             <!--BACKGROUND VIDEO STUFF HERE-->
+    <div id="logoOG">
+        <img src="img/icon/Logo.png" alt="logoOG">
+    </div>
+
+<div id="videoContainer"> 
+    <div id="imageloopdiv"> </div>
+
+    <video id="video" autoplay="autoplay" loop="loop">
+        <source src="videos/mb720ps.mp4" type="video/mp4">
+    </video> 
+</div>
+        
+        <!--        NAVIGATION STUFF-->
+    <div id="navBackground">
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">ETUSIVU</a>
+        <a href="tapahtuma.html">TAPAHTUMA</a>
+        <a href="yhteydenotto.html">YHTEYDENOTTO</a>
+        <a href="partnerit.html">TUOMARIT</a>
+        <a href="pelit.html">PELIT</a>
+        <a href="jarjestajat.html">JÄRJESTÄJÄT</a>
+        <a href="javascript:void(0);" class="icon" onclick="Function()">&#9776;</a>
+    </div>
+    
+    
+    
+ <div id="tuomarit">
+        <p> Tapahtumassa pitsausta tuomaroimassa: </p>
+    </div>
+<!--PARTNERS ETC HERE-->
+
+<div class="introductionContainerLeft">
+    <a href="https://twitter.com/watcherdev" target="_blank">
+
+        <div class="introImgLeft" id="intro1">
+        </div>
+        <div class="introTextLeft">
+            <div class="introTextContainer">
+                <h1 class="introh" id="intro1h">
+                    Ion Hazzikostas
+                </h1>
+                <h2 class="introh2">
+                    Game Director @Blizzard
+                </h2>
+                <p class="introp" id=intro1p>
+                    Ion aloitti työnsä Blizzardilla pelin kehittäjänä vuoden 2008 kesällä. 
+                    Tuolloin hänen työnkuvaansa kuului World of Warcraft -pelin PvE sisällön kehittäminen. 
+                    Vuonna 2015 hänet ylennettiin apulaispelinjohtajan rooliin ja vuonna 2016 pelin johtajaksi. 
+                    Vapaa ajallaan Hazzikostas tykkää matkustaa ympäri Etelä-Kaliforniaa etsien käsityöllä valmistettua 
+                    olutta (craftbeer). Hän on kotoisin New Yorkista ja suuri pesäpallojoukkue New York Yankees -fani. 
+                </p>
+            </div>
+        </div>
+    </a>
+</div>
+
+
+<div class="introductionContainerRight">
+    <a href="https://twitter.com/GabeLNewell" target="_blank">
+        <div class="introImgRight" id="intro2"> 
+        </div>
+        <div class="introTextRight">
+            <div class="introTextContainer">
+                <h1 class="introh" id="intro2h">
+                    Gabe Newell
+                </h1>
+                <h2 class="introh2">
+                    Toimitusjohtaja, Pelisuunnittelija, Ohjelmoija @Valve Corporation
+                </h2>
+                <p class="introp" id=intro2p>
+                    Newell on tietokonepelien kehittämiseen erikoistuneen Valve Corporationin perustajajäsen ja 
+                    toimitusjohtaja. Hänet tunnetaan lempinimellä Gaben. Newell opiskeli Harvardin yliopistossa, 
+                    mutta jätti sen kesken ja siirtyi Microsoftille, jossa työskenteli kolmetoista vuotta. 
+                    Microsoftin entisen työntekijän Michael Abrashin innoittamana Newell lähti Microsoftilta ja 
+                    perusti Valve Softwaren yhdessä entisen työkaverinsa Mike Harringtonin kanssa vuonna 1996. 
+                </p>
+            </div>
+        </div>
+    </a>    
+</div>
+
+<div class="introductionContainerLeft">
+    <a href="https://twitter.com/Rovio" target="_blank">
+        <div class="introImgLeft" id="intro3"> 
+        </div>
+        <div class="introTextRight">
+            <div class="introTextContainer">
+                <h1 class="introh" id="intro3h">
+                    Kati Levoranta 
+                </h1>
+                <h2 class="introh2">
+                    Toimitusjohtaja @Rovio
+                </h2>
+                <p class="introp" id=intro3p>
+                    Levoranta aloitti työnsä Roviolla lakiasianjohtajana vuonna 2012, 
+                    jolloin hänestä tuli myös johtoryhmän jäsen. Vuonna 2015 hän toimi Euroopan, 
+                    Lähi-idän sekä Afrikan myyntijohtajana ja toimitusjohtajana 2016 alkaen. 
+                    Levoranta on oikeustieteen maisteri (Columbian yliopisto, Yhdysvallat). 
+                </p>
+            </div>
+        </div>
+    </a>
+</div>
+
+<footer>
+        <ul class="footerSM">
+            <li><a href="index.html"><img class="logoi" src="img/logo/homepageicon.png" alt="H"></a></li>
+            <li><a target="_blank" href="#"><img class="logoi" src="img/logo/facebook.png" alt="F"></a></li>
+            <li><a target="_blank" href="https://twitter.com/oulugames"><img class="logoi" src="img/logo/twitter.png" alt="T"></a></li>
+        </ul>
+        <p>
+            +35840123456<br>
+            oulugames@gmail.com
+        </p>
+    </footer>
+
+<script src="js/game.js"> </script>
+<script src="js/webprojekti.js"> </script>
+    </body>
+</html>
